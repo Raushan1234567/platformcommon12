@@ -6,7 +6,7 @@ import com.platform.entity.Course;
 import com.platform.entity.Student;
 
 public interface CourseServiceInterface {
-    Course createCourse(Course course);
+   public  Course createCourse(Course course);
     List<Course> getAllCourses();
     Course getCourseById(Long courseId);
     List<Course> getCoursesByStudentId(Long uniqueStudentCode);

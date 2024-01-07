@@ -45,7 +45,7 @@ public class AppConfig {
 			});
 		}) .authorizeHttpRequests(auth -> auth.requestMatchers(HttpMethod.POST , "/admin/register").permitAll()
 				.requestMatchers("/swagger-ui*/**","/v3/api-docs/**").permitAll()
-				.requestMatchers(HttpMethod.PUT, "/students/**").permitAll()
+				.requestMatchers(HttpMethod.PUT, "/students/update/**").permitAll()
 				.requestMatchers(HttpMethod.GET, "/students/**").permitAll()
 				.requestMatchers(HttpMethod.DELETE, "/students/remove/course/**").permitAll()
 				.requestMatchers("/admin/logini").hasAnyRole("ADMIN" , "USER")
@@ -55,7 +55,7 @@ public class AppConfig {
 				.csrf(csrf -> csrf.disable())
 				.addFilterAfter(new JwtTokenGeneratorFilter(), BasicAuthenticationFilter.class)
 				.addFilterBefore(new JwtTokenValidatorFilter(), BasicAuthenticationFilter.class)
-				.formLogin(Customizer.withDefaults())
+//			.formLogin(Customizer.withDefaults())
 				.httpBasic(Customizer.withDefaults());
 		
 		return http.build() ;
