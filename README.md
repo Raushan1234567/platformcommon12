@@ -51,6 +51,12 @@ I designed a student management system that has two sides of functionality: the 
         </li>
     </ul>
 
+
+![Screenshot (386)](https://github.com/Raushan1234567/platformcommon12/assets/115460955/5e50d30f-67fb-49d9-bc88-de29dbc94216)
+
+    
+![Screenshot (388)](https://github.com/Raushan1234567/platformcommon12/assets/115460955/622ddfa1-20b9-4eb6-9308-542a829126c5)
+
 Schema of my project
 
 
