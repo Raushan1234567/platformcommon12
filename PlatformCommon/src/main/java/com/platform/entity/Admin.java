@@ -23,8 +23,8 @@ public class Admin {
     private String username;
     
     private String password;
-   @Email
-   @Column(unique = true)
+    @Email
+    @Column(unique = true)
     private String email;
     private String role;
 
